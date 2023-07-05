@@ -29,10 +29,10 @@ function showlogList() {
 // 展示暂无日志的提示
 function showNoLog() {
   const innerHtml =
-    '<span>暂无日志，您可以去<a id="react" href="https://react.docschina.org/">React中文官网</a>页面选中文字并点击鼠标右键添加日志</span>';
+    '<span>暂无日志，您可以去<a id="react" href="">打开</a>任意一个页面选中文字并点击鼠标右键添加日志</span>';
   $(innerHtml).appendTo($("#logList"));
   $("#react").click(() => {
-    chrome.tabs.create({ url: `https://react.docschina.org/` });
+    chrome.tabs.create({ url: `https://cn.vuejs.org/` });
   });
 }
 
